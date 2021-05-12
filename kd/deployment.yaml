@@ -129,6 +129,11 @@ spec:
                 secretKeyRef:
                   name: {{.KUBE_NAMESPACE}}-ukvi-complaint-identity
                   key: user
+            - name: CASE_CREATOR_UKVI_COMPLAINT_TEAM
+              valueFrom:
+                secretKeyRef:
+                  name: {{.KUBE_NAMESPACE}}-ukvi-complaint-identity
+                  key: team
             - name: CASE_CREATOR_UKVI_COMPLAINT_GROUP
               valueFrom:
                 secretKeyRef:
