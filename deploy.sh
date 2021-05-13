@@ -6,8 +6,6 @@ export KUBE_SERVER=${KUBE_SERVER}
 export KUBE_TOKEN=${KUBE_TOKEN}
 export VERSION=${VERSION}
 
-export IDENTITY_CONFIG_MAP_NAME="hocs-complaint-identity"
-
 if [[ ${KUBE_NAMESPACE} == *prod ]]
 then
     export CLUSTER_NAME="acp-prod"
