@@ -24,4 +24,5 @@ export KUBE_CERTIFICATE_AUTHORITY="https://raw.githubusercontent.com/UKHomeOffic
 cd kd || exit 1
 
 kd --timeout 15m \
+    -f identityConfigMap.yaml \
     -f deployment.yaml
